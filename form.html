@@ -85,29 +85,31 @@
           </fieldset>
 
           <fieldset class="order-form__item">
-            <label class="order-form__tel">Тел</label>
+            <legend class="order-form__title">Тел</label>
             <div class="order-form__group">
-              <input class="order-form__input-tel" type="tel" pattern="\+7\s[0-9]{3}\s[0-9]{2}\s[0-9]{2}" placeholder="+7 ХХХ ХХ ХХ*"  required>
+              <input class="order-form__input-text" type="tel" pattern="\+7\s[0-9]{3}\s[0-9]{2}\s[0-9]{2}" placeholder="+7 ХХХ ХХ ХХ*"  required>
             </div>
           </fieldset>
 
           <fieldset class="order-form__item">
             <legend class="order-form__title">E-mail</legend>
             <div class="order-form__group">
-              <input class="order-form__input-email" type="email" placeholder="Ваш Email*" required>
+              <input class="order-form__input-text" type="email" placeholder="Ваш Email*" required>
             </div>
           </fieldset>
 
           <fieldset class="order-form__item">
             <legend class="order-form__title">Доп</legend>
             <div class="order-form__group">
-              <textarea class="order-form__input-text" rows="8" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+              <textarea class="order-form__input-textarea" rows="8" placeholder="Опишите все ваши пожелания к заказу"></textarea>
             </div>
           </fieldset>
 
-          <p class="order-form__legend"><sub>*</sub>Поля обязательны для заполнения</p>
+          <div class="order-form__footer">
+            <p class="order-form__note"><sup>*</sup>Поля обязательны для заполнения</p>
 
-          <button class="order-form__btn btn" type="submit">Отправить заказ</button>
+            <button class="order-form__btn btn" type="submit">Отправить заказ</button>
+          </div>
         </form>
 
     </main>
