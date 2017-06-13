@@ -1,21 +1,22 @@
 .categories {
-  font-family: $font-primary;
-  font-size: 19px;
-  color: $white;
-  line-height: 24px;
-  background-color: $tiffany;
+  @include font(19px, 400, 43px);
+  color: $color-background;
+  background-color: $color-primary;
 }
 
 .categories__link {
-  padding-left: 0px;
-}
 
-.categories__link p {
 
-  margin-left: 30px;
-  height: 63px;
-  background-image: url(/img/icon-interior.svg);
-  background-repeat: no-repeat;
+  p {
+    margin-left: 30px;
+    min-height: 63px;
+    /*  background-image: url(/img/icon-interior.svg);
+        background-repeat: no-repeat;  */
+
+  &--toys p {
+    /*  background-image: url(/img/icon-toy.svg); */
+  }
+  }
 }
 
 .categories__link--toys p {
