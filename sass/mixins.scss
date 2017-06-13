@@ -1,0 +1,10 @@
+@mixin font($size, $weight, $line-height) {
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $height;
+}
+
+@mixin  center() {
+  padding-left: 30px;
+  padding-right: 30px;
+}

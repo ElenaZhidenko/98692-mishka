@@ -1,0 +1,25 @@
+.week-good {
+  margin: 0 30px 0 30px;
+}
+
+week-good__title {
+  font-family: $font-primary;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 55px;
+}
+
+.week-good__options {
+  border-collapse: collapse;
+}
+
+.week-good__options td {
+  border-bottom: 1px solid $lightgray;
+  padding-bottom: 13px;
+  padding-top: 13px;
+}
+
+.week-good__option-name {
+  width: 95px;
+}
+
