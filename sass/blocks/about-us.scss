@@ -1,0 +1,53 @@
+.about-us__wrapper {
+  @include center;
+}
+
+.about-us__list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  list-style: none;
+}
+
+@media (min-width: 768px) {
+
+  .about-us__wrapper {
+    @include center-tablet;
+  }
+
+  .about-us__item {
+    width: 300px;
+    margin-right: 34px;
+
+    &--materials {
+      order: 1;
+    }
+
+    &--style {
+      order: 3;
+    }
+
+    &--likes {
+      order: 5;
+    }
+
+    &--love {
+      order: 2;
+    }
+
+    &--protectionism {
+      order: 4;
+    }
+
+    &--package {
+      order: 6;
+    }
+  }
+}
+
+@media (min-width: 1150px) {
+  .about-us__wrapper {
+    @include center-desktop;
+    width: 700px;
+  }
+}

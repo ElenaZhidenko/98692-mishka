@@ -1,5 +1,7 @@
 .week-good {
-  margin: 0 30px;
+  @include center;
+  display: flex;
+  flex-direction: column;
 }
 
 .week-good__title {
@@ -17,4 +19,69 @@
 
 .week-good__option-name {
   width: 95px;
+}
+
+@media (min-width: 768px) {
+  .week-good {
+    @include center-tablet;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    img {
+      width: 334px;
+      height: 404px;
+    }
+  }
+
+  .week-good__header {
+    display: flex;
+    justify-content: space-between;
+    width: 668px;
+  }
+
+  .week-good__descr {
+    width: 290px;
+    padding-right: 44px;
+    padding-bottom: 120px;
+  }
+
+  .week-good__footer {
+    margin-top: -115px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .week-good {
+    @include center-desktop;
+    padding-top: 120px;
+
+    img {
+      order: 2;
+      width: 525px;
+      height: 638px;
+      margin-top: -115px
+    }
+  }
+
+  .week-good__header {
+    justify-content: flex-start;
+    order: 1;
+    z-index: 2;
+    width: 1050px;
+  }
+
+  .week-good__title {
+    order: 1;
+  }
+
+  .week-good__descr {
+    order: 2;
+    margin-left: 125px;
+  }
+
+  .week-good__footer {
+    order: 3;
+    width: 290px;
+    margin-left: 125px;
+  }
 }

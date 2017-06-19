@@ -1,3 +1,161 @@
 .main-nav {
+  @include center;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  width: 320px;
+  margin: 0 auto;
+}
 
+.main-nav__toggle {
+  position: absolute;
+  z-index: 2;
+  display: block;
+  top: 29px;
+  right: 30px;
+  width: 21px;
+  height: 20px;
+  background: #444;
+
+  &:active {
+
+  }
+}
+
+.main-nav__list {
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-nav__item {
+  min-width: 260px;
+
+  &--logo {
+    padding-top: 22px;
+    padding-bottom: 22px;
+  }
+
+  &--new {
+    display: none;
+  }
+
+  &--sale {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+
+  .main-nav {
+    @include center-tablet;
+  }
+
+  .main-nav__toggle {
+    @include visually-hidden;
+  }
+
+  .main-nav__list {
+
+  }
+
+  .main-nav__item {
+    min-width: 20px;
+    padding-top: 35px;
+
+    &--logo {
+      width: 322;
+      padding-right: 210px;
+    }
+
+    &--basket {
+      order: 2;
+      width: 250px;
+    }
+
+    &--search {
+      order: 1;
+      width: 83px;
+    }
+
+    &--catalog {
+      order: 3;
+      width: 130;
+      margin-right: 30px;
+    }
+
+    &--kniting {
+      order: 4;
+      margin-right: 350px;
+    }
+
+    &--new {
+      display: none;
+    }
+
+    &--sale {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: 1150px) {
+
+  .main-nav {
+    @include center-desktop;
+  }
+
+  .main-nav__toggle {
+    @include visually-hidden;
+  }
+
+  .main-nav__list {
+  }
+
+  .main-nav__item {
+    min-width: 20px;
+
+    &--logo {
+      width: 130px;
+      padding-right: 100px;
+      order: 3;
+    }
+
+    &--basket {
+      order: 5;
+      width: 267px;
+    }
+
+    &--search {
+      order: 4;
+      width: 83px;
+    }
+
+    &--catalog {
+      order: 1;
+      width: 175px;
+    }
+
+    &--kniting {
+      order: 2;
+      width: 160px;
+      margin-right: auto;
+    }
+
+    &--new {
+      display: block;
+      order: 6;
+      margin-right: 60px;
+    }
+
+    &--sale {
+      display: block;
+      order: 7;
+      margin-right: auto;
+    }
+  }
 }

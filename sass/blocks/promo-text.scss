@@ -1,0 +1,18 @@
+.promo-text {
+  @include center;
+  padding-top: 30px;
+}
+
+@media (min-width: 768px) {
+
+  .promo-text {
+    @include center-tablet;
+  }
+}
+
+@media (min-width: 768px) {
+
+  .promo-text {
+    width: 700px;
+  }
+}

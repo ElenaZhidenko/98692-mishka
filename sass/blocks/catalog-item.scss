@@ -1,0 +1,40 @@
+.catalog-item {
+  margin-top: 30px;
+  border: 1px solid $color-decoration;
+}
+
+@media (min-width: 768px) {
+
+  .catalog-item {
+    display: flex;
+    width: 668px;
+  }
+
+  .catalog-item__link {
+
+    img {
+      width: 334px;
+      height: 334px;
+      margin-bottom: -5px;
+      margin-right: 25px;
+    }
+  }
+}
+
+@media (min-width: 1150px) {
+
+  .catalog-item {
+    flex-wrap: wrap;
+    width: 315px;
+    margin-right: 52px;
+  }
+
+  .catalog-item__link {
+
+    img {
+      width: 315px;
+      height: 442px;
+      margin: 0;
+    }
+  }
+}

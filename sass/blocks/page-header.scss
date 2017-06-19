@@ -1,7 +1,31 @@
 .page-header {
-
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .logo {
-  margin: 22px auto;
+  height: 35px;
+  margin: 80px;
+}
+
+@media (min-width: 768px) {
+
+  .logo {
+    width: 111px;
+    height: 46px;
+    margin: 0;
+  }
+}
+
+@media (min-width: 1150px) {
+
+  .logo {
+    width: 149px;
+    height: 72px;
+    align-self: flex-start;
+    order: 3;
+    margin-top: 8px;
+    margin-left: 0px;
+  }
+
 }

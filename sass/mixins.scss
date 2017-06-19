@@ -10,3 +10,28 @@
   width: 260px;
   margin: 0 auto;
 }
+
+@mixin center-tablet() {
+  padding-left: 50px;
+  padding-right: 50px;
+  width: 668px;
+  margin: 0 auto;
+}
+
+@mixin center-desktop() {
+  padding-left: 50px;
+  padding-right: 50px;
+  width: 1050px;
+  margin: 0 auto;
+}
+
+@mixin visually-hidden() {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

@@ -1,0 +1,147 @@
+.order-form {
+  margin-bottom: 55px;
+}
+
+.order-form__wrapper {
+  @include center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.order-form__title {
+  display: flex;
+  align-items: center;
+
+  &:after {
+    content: "";
+    height: 1px;
+    width: 30px;
+    background-color: $color-primary;
+    flex-grow: 1;
+    margin-left: 20px;
+  }
+}
+
+.order-form__group {
+  display: flex;
+  flex-wrap: wrap;
+  width: 260px;
+}
+
+.order-form__input-text {
+  flex-grow: 1;
+  border-bottom: 2px solid $color-text;
+}
+
+.order-form__input-textarea {
+  flex-grow: 1;
+  border: 2px solid $color-text;
+}
+
+.order-form__footer {
+  @include center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.order-form__btn {
+  border: 2px solid $color-text;
+}
+
+@media (min-width: 768px) {
+
+  .order-form__item {
+
+    &--bg-color {
+      background-color: $color-decoration;
+    }
+  }
+
+  .order-form__wrapper {
+    @include center-tablet;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 50px 0;
+  }
+
+  .order-form__title {
+    width: 115px;
+
+    &:after {
+      display: none;
+      width: 0;
+    }
+  }
+
+  .order-form__container {
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .order-form__group {
+    width: 500px;
+    margin-right: 0;
+    margin-left: auto;
+
+    &--small {
+      width: 200px;
+      margin-right: 38px;
+    }
+  }
+
+  .order-form__input-text {
+    flex-grow: 1;
+
+    &--color {
+      background-color: $color-decoration;
+    }
+  }
+
+  .order-form__input-textarea {
+    flex-grow: 1;
+  }
+
+  .order-form__footer {
+    @include center-tablet;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+
+  .order-form__note {
+    order: 2;
+  }
+
+  .order-form__btn {
+    order: 1;
+  }
+}
+
+@media (min-width: 1150px) {
+
+  .order-form__wrapper {
+    @include center-desktop;
+  }
+
+  .order-form__title {
+    width: 175px;
+  }
+
+  .order-form__container {
+    width: 875px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .order-form__group {
+    width: 700px;
+    margin-right: 175px;
+    margin-left: auto;
+
+    &--small {
+      width: 200px;
+      margin-right: 38px;
+    }
+  }
+}

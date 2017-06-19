@@ -1,0 +1,23 @@
+.catalog__wrapper {
+  @include center;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+
+  .catalog__wrapper {
+    @include center-tablet;
+    margin-bottom: 55px;
+  }
+}
+
+@media (min-width: 1150px) {
+
+  .catalog__wrapper {
+    @include center-desktop;
+    flex-wrap: nowrap;
+    margin-bottom: 57px;
+  }
+}

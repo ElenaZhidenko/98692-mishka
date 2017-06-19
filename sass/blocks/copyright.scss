@@ -1,0 +1,12 @@
+.copyright {
+  width: 260px;
+  border-top: 1px solid $color-decoration-dark;
+}
+
+@media (min-width: 768px) {
+
+  .copyright {
+    order: 3;
+    width: 185px;
+  }
+}

@@ -1,0 +1,35 @@
+.page-footer {
+  background-color: $color-decoration;
+}
+
+.page-footer__wrapper {
+  @include center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.page-footer__logo {
+  display: none;
+}
+
+@media (min-width: 768px) {
+
+  .page-footer__wrapper {
+    @include center-tablet;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .page-footer__logo {
+    display: block;
+    order: 1;
+  }
+}
+
+@media (min-width: 1150px) {
+
+  .page-footer__wrapper {
+    @include center-desktop;
+  }
+}
